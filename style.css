@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+  }
+  
+  main {
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://monitormercantil.com.br/wp-content/uploads/2020/11/Amendoim.jpg");
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+/* termino do menu*/
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: rgb(134, 54, 7);
+}
+h1,p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 200px;
+  height: auto;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(134, 54, 7);
+}
+
+.card{
+  width: 300px;
+  height: 580px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: #06212c;
+  overflow: hidden;
+  margin-left: 30px;
+  box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+}
+.card-img{
+  position: absolute;
+  width: 260px;
+  filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+}
+.card-data{
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+.card-title{
+  font-size:1.5rem;
+  color: #06212c;
+  margin-bottom: .5rem;
+  align-items: center;
+}
+.card-description{
+  font-family: Arial,sans-serif;
+  text-align: initial;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+  font-size: 1.25rem;
+}
+.card-img,
+.card-data,
+.card-description{
+  transition: .5s;
+}
+
+.card:hover .card-img{
+  transform:translate(-1.5rem, -9.5rem) rotate(-20deg);
+}
+
+.card:hover .card-data{
+  transform: translateY(4.8rem);
+}
+.card:hover .card-title{
+  transform: translate(-2.3rem);
+  margin-bottom: 0;
+}
+
+.card:hover .card-preci{
+  transform: translateX(-6.8rem);
+}
+
+.card:hover .card-description, .card:hover {
+  transition-delay: .2s;
+  opacity: 1;
+}

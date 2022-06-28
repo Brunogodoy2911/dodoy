@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel ="icon" type="image/jpg" href="coroa.jpg"/>
+    <script src="https://kit.fontawesome.com/b297865b6a.js" crossorigin="anonymous"></script>
+    <title>Contate-nos</title>
+    <script language="javascript" type="text/javascript">
+        function validar() {
+        var username = form.username.value;   
+        if (username == "") {
+           alert('Por favor, Preencha o campo com seu nome!');
+           form.username.focus();
+        return false;
+        }
+    }    
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo"> GODOY AMENDOIM </a>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre a Empresa</a></li>
+            <li><a href="cultivo.html">Como Cultivamos?</a></li>
+            <li><a href="beneficios.html">Beneficios do Amendoim</a></li>
+            <li><a href="receita.html">Receitas</a></li>
+            <li><a href="contato.html">Contate-nos</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div id="form">
+        <form action="">
+            <h2 class="title"> Cadastro para contato </h2>
+        <label for="username"> Nome: </label>
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input id="username" name="username" placeholder="Nome" type="text">
+            </div>
+
+            <label for="email"> Email para contato: </label>
+            <div class="input">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="email" name="mail" placeholder="Email" type="text">
+            </div>
+            <label for="fone"> Telefone para contato: </label>
+            <div class="input">
+                <i class="fa-solid fa-phone"></i>
+                <input id="fone" name="fone" placeholder="Fone" type="number">
+            </div>
+                <label for="text"> Digite sua mensagem:  </label>
+                <div class="input">
+                    <textarea rows="7" name="msg"></textarea>
+                </div>
+
+                <div id="btn">
+                    <button type="submit"> Enviar </button><br><button type="reset"> Limpar</button>
+                    
+                </div>
+        </form>
+    </form>    
+    </div><hr color="black">
+    <center><h5>bruno godoy 2022 - Todos os direitos reservados.</h5></center>
+</body>
+</html>

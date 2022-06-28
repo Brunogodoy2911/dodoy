@@ -1,0 +1,57 @@
+<!doctype html> 
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script language="javascript" type="text/javascript">
+	function validar() {
+    var nome = form1.nome.value;   
+	var fone = form1.fone.value;
+    var email= form1.email.value;
+	if (nome == "") {
+	   alert('Por favor, Preencha o campo com seu nome!');
+	   form1.nome.focus();
+	return false;
+	}
+    if(email == "") {
+       alert('Preencha o campo com seu email!');
+       form1.email.focus();
+    return false; 
+    }
+    if (fone == "") {
+	   alert('Preencha o campo com seu telefone!');
+	   form1.fone.focus();
+	return false;
+	}
+
+}
+</script> 
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo"> GODOY AMENDOIM </a>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre a Empresa</a></li>
+            <li><a href="cultivo.html">Como Cultivamos?</a></li>
+            <li><a href="beneficios.html">Beneficios do Amendoim</a></li>
+            <li><a href="receita.html">Receitas</a></li>
+            <li><a href="contato.html">Contate-nos</a></li>
+          </ul>
+        </nav>
+      </header>
+    		<br><center><h1><mark> Cadastro para Contato</h1></center></mark><br><hr color="black" size="8"><br><br><br><br><br><br>
+				<center><form name="form1" action="clienteconfirm.html" method="post">  
+                        Nome: <input type="text" name="nome"><br /><br /><br>
+                        Email: <input type="text" name="email"><br /><br /><br>
+						Telefone: <input type="number"  name="fone"><br /><br /><br>
+						Digite sua mensagem: <textarea cols="50" rows="10"></textarea>
+						<br><br><input type="submit"  onclick="return validar()" value="ENVIAR">
+                        <input type="reset"  name="limpa" value="Limpar"><br><br><br>	
+				</form></center>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr color="black" size="8"><br>
+	<center><h5>bruno godoy 2022 - Todos os direitos reservados.</h5></center>
+</body>
+</html>
